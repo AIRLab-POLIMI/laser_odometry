@@ -11,12 +11,12 @@ find_package(catkin REQUIRED COMPONENTS nav_msgs roscpp sensor_msgs tf)
 
 option(STRICT_CENSI_COVARIANCE "Use strict censi covariances" OFF)
 
-find_package(Eigen REQUIRED)
-add_definitions (${EIGEN_DEFINITIONS})
-include_directories(${EIGEN_INCLUDE_DIRS})
+#find_package(Eigen REQUIRED)
+#add_definitions (${EIGEN_DEFINITIONS})
+#include_directories(${EIGEN_INCLUDE_DIRS})
 
-#find_package(Eigen3 REQUIRED)
-#include_directories(${EIGEN3_INCLUDE_DIR})
+find_package(Eigen3 REQUIRED)
+include_directories(${EIGEN3_INCLUDE_DIR})
 
 include_directories(src/scanmatching/ANN/include)
 
